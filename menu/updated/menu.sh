@@ -49,7 +49,7 @@ start-menu
 5)
 msettings
 ;;
-5)
+6)
 clear
 exit
 ;;
