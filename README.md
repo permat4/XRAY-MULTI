@@ -77,19 +77,7 @@ menu
 ```
 7. DONE / SELESAI
 
-# Info Perbaiki / FIX
-- ***NOTE***
-- jika xray dan nginx mengalami error !
-- ketik
-```
-certxray
-```
-lalu ketik
-```
-restart-xray
-```
-
-8. Crontab dan lain lain
+8. Crontab
 
 crontab -e
 @reboot sleep 60 && /usr/bin/restart-xray
@@ -111,6 +99,18 @@ folder xray:
 
 folder nginx:
 /etc/nginx/
+
+# Info Perbaiki / FIX
+- ***NOTE***
+- jika xray dan nginx mengalami error !
+- ketik
+```
+certxray
+```
+lalu ketik
+```
+restart-xray
+```
 
 # INFO KODE SCRIPT
 - xmenu (untuk menampilkan menu original)
