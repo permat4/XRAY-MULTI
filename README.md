@@ -1,6 +1,7 @@
 <p align="center">
 
 # XRAY MULTI PORT MOD
+- Di bersihkan lagi oleh permat4
 - ***Script XRAY Multi Port 443/80 MOD By LIZSVR***
 - ***Original Script By SL***
 - ***SCRIPT UNTUK MEMBUAT SERVER VPN***
@@ -67,7 +68,7 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 - maka proses install akan berjalan, jangan keluar dari vps
 - jika keluar dari vps saat lagi proses install,maka akan gagal
 ```
-wget https://raw.githubusercontent.com/lizsvr/XRAY-MULTI/main/setup.sh && chmod +x setup.sh && ./setup.sh
+wget https://raw.githubusercontent.com/permat4/XRAY-MULTI/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 5. jika sudah selesai,lalu ketik xmenu untuk menampilkan menu
 
@@ -87,6 +88,29 @@ lalu ketik
 ```
 restart-xray
 ```
+
+8. Crontab dan lain lain
+
+crontab -e
+@reboot sleep 60 && /usr/bin/restart-xray
+@reboot sleep 60 && systemctl restart xray
+
+9. Speedtest
+
+sudo apt-get install curl
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+
+10. Lain - lain
+
+rm /home/vps/public_html/info.php
+rm /home/vps/public_html/index.html
+
+folder xray:
+/etc/xray/
+
+folder nginx:
+/etc/nginx/
 
 # INFO KODE SCRIPT
 - xmenu (untuk menampilkan menu original)
